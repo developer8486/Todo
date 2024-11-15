@@ -62,8 +62,8 @@
 <body style="background-color: black;">
     <div class="edit" style="margin-top: 12rem;">
         <form method="post" action="/<%=task._id%>/?_method=PUT">
-        <input name="newtitle" value="<%=task.workTitle%>">
-        <textarea name="newdesc"><%=task.workDesc%></textarea>
+        <input name="newtitle" value="<%=task.workTitle%>" required>
+        <textarea name="newdesc" required><%=task.workDesc%></textarea>
         <button>Submit</button>
         </form>
     </div>
