@@ -20,9 +20,11 @@
         
         </h2>
 
-       
+       <%if(todos.length >0){%>
         <h3 style="color: aliceblue;">Tasks List</h3>
         <div class="gradient-cards">
+          <%}%>
+
 
         <% for(let todo of todos) { %>
           <div class="card">

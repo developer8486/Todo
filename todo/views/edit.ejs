@@ -1,10 +1,8 @@
 <style>
     .edit {
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: whitesmoke;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 500px;
@@ -18,25 +16,20 @@
     gap: 15px;
 }
 
-.edit input[type="text"],
 .edit textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-.edit input[type="text"]:focus,
-.edit textarea:focus {
+.edit textarea {
     border-color: #007bff;
-    outline: none;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
 .edit textarea {
-    resize: vertical;
-    min-height: 100px;
+    height: 100px;
 }
 
 .edit button {
@@ -53,12 +46,6 @@
 .edit button:hover {
     background-color: #0056b3;
 }
-
-.edit button:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-}
-
 </style>
 
 
