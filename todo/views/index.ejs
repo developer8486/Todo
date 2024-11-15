@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="container-title">To-DO<br>App
+        <br>
+        <div class="addtask">
+            <form method="get" action="/add">
+            <button class="addtaskbtn">
+                Add new task
+            </button>
+        </form></div>
+        
+        </h2>
+
+       
+        <h3 style="color: aliceblue;">Tasks List</h3>
+        <div class="gradient-cards">
+
+        <% for(let todo of todos) { %>
+          <div class="card">
+            <div class="container-card bg-green-box">
+              <h3 class="card-title"><%=todo.workTitle %></h3>
+              <p class="card-description"><%=todo.workDesc%></p>
+              <div class="btns">
+                <div class="btn"><form method="post" action="/<%=todo._id%>?_method=DELETE"><button>Delete</button></form></div>
+              <div class="btn"><form method="get" action="/<%=todo._id%>/edit"><button>Edit</button></form></div>
+              </div>
+              
+            </div>
+          </div>
+        <%}%>
+          
+          
+        </div>
+      </div>
+</body>
+</html>
